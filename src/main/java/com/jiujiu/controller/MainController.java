@@ -53,8 +53,7 @@ public class MainController {
                     .method(Connection.Method.GET)
                     .ignoreContentType(true)
                     .data("q", q, "start", start)
-                    .userAgent("Mozilla/5.0 (X11; Linux x86_64…) Gecko/20100101 Firefox/59.0")
-                    .header("Referer", "http://bkjws.sdu.edu.cn/").execute();
+                    .userAgent("Mozilla/5.0 (X11; Linux x86_64…) Gecko/20100101 Firefox/59.0").execute();
         } catch (IOException e) {
             e.printStackTrace();
         }
